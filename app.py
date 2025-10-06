@@ -16,4 +16,13 @@ if menu == "Cadastrar":
             criar_aluno(nome, idade)
             st.success(f"Aluno {nome} cadastrado com sucesso!")
         else: 
-            st.warning("O campo nome não pode ser vazio...s")
+            st.warning("O campo nome não pode ser vazio...")
+
+elif menu == "Listar":
+    st.subheader("📓 Listar alunos")
+    alunos = listar_alunos()
+    if alunos:
+        for linha in alunos:
+            st.write(f"ID = {linha[0]} | NOME = {linha[1]} | IDADE = {linha[2]}")
+    else:
+        st.info("Nenhum aluno encontrado...")       
