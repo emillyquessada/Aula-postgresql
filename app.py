@@ -16,4 +16,4 @@ if menu == "Cadastrar":
             criar_aluno(nome, idade)
             st.success(f"Aluno {nome} cadastrado com sucesso!")
         else: 
-            st.warning("O campo nome não pode ser vazio...s")
+            st.warning("O campo nome não pode ser vazio...")
