@@ -54,4 +54,5 @@ python -m streamlit run app.py
 Projeto desenvolvido em aula para treinar python + postgresql
 
 Professor: Gabriel Brito de sousa 
+|
 Aluno(a): Emilly Quessada
