@@ -27,7 +27,7 @@ def listar_alunos():
                 cursor.close()
                 conexao.close()
 
-def atualizar_idade(id, idade):
+def atualizar_idade(id_aluno, nova_idade):
     conexao, cursor = conectar()
     if conexao:
         try:
@@ -43,7 +43,7 @@ def atualizar_idade(id, idade):
             cursor.close()
             conexao.close()
 
-def deletar_aluno(id):
+def deletar_aluno(id_aluno):
     conexao, cursor = conectar()
     if conexao:
         try:
